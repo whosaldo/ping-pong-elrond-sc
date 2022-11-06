@@ -1,29 +1,28 @@
-# Interaction
+# Simple Ping-Pong Smart Contract on Elrond Blockchain
 
-## On devnet
+First Smart Contract (that works) made by me.
 
-Deploy & interact with contract:
+This SC
 
-```
-python3 ./interaction/playground.py --pem=./testnet/wallets/users/alice.pem --proxy=http://localhost:7950
-```
-
-Interact with existing contract:
+Deploy:
 
 ```
-python3 ./interaction/playground.py --pem=./testnet/wallets/users/alice.pem --proxy=http://localhost:7950 --contract=erd1...
-```
-
-## On testnet
-
-Deploy & interact with contract:
-
-```
-python3 ./interaction/playground.py --pem=my.pem --proxy=https://testnet-gateway.elrond.com
+erdpy contract deploy --pem <YourPem>.pem --proxy="https://devnet-gateway.elrond.com" --chain="D" --recall-nonce --gas-limit 8000000 --project ping-pong/ --arguments="<input your desired seconds>" --send 
 ```
 
 Interact with existing contract:
 
+Ping:
 ```
-python3 ./interaction/playground.py --pem=my.pem --proxy=https://testnet-gateway.elrond.com --contract=erd1...
+erdpy contract call <Contract Address> --pem <YourPem>.pem --proxy="https://devnet-gateway.elrond.com" --chain="D" --function="ping" --value=<enter how much xegld wanna send !biguint> --recall-nonce --gas-limit 8000000 --send 
 ```
+Pong:
+```
+erdpy contract call  --pem walletKey.pem --proxy="https://devnet-gateway.elrond.com" --chain="D" --function="pong" --recall-nonce --gas-limit 8000000 --send
+```
+If everything works as planned you should receive your xEgld back! :D
+
+
+Ubuntu 22.04
+Erdpy 2.0.3
+Visual Studio Code

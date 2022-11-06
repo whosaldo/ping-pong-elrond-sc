@@ -1,0 +1,72 @@
+{
+    "buildInfo": {
+        "rustc": {
+            "version": "1.67.0-nightly",
+            "commitHash": "215e3cd218b83b8a3152d84d92f17109253c25e1",
+            "commitDate": "2022-11-03",
+            "channel": "Nightly",
+            "short": "rustc 1.67.0-nightly (215e3cd21 2022-11-03)"
+        },
+        "contractCrate": {
+            "name": "ping-pong",
+            "version": "0.0.0"
+        },
+        "framework": {
+            "name": "elrond-wasm",
+            "version": "0.36.1"
+        }
+    },
+    "name": "PingPong",
+    "constructor": {
+        "inputs": [
+            {
+                "name": "duration_in_seconds",
+                "type": "u64"
+            }
+        ],
+        "outputs": []
+    },
+    "endpoints": [
+        {
+            "name": "ping",
+            "mutability": "mutable",
+            "payableInTokens": [
+                "EGLD"
+            ],
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "name": "pong",
+            "mutability": "readonly",
+            "inputs": [],
+            "outputs": []
+        },
+        {
+            "name": "getCurrentFunds",
+            "mutability": "readonly",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "BigUint"
+                }
+            ]
+        },
+        {
+            "docs": [
+                "storage"
+            ],
+            "name": "getDeadline",
+            "mutability": "readonly",
+            "inputs": [],
+            "outputs": [
+                {
+                    "type": "u64"
+                }
+            ]
+        }
+    ],
+    "events": [],
+    "hasCallback": false,
+    "types": {}
+}

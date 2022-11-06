@@ -1,0 +1,22 @@
+[
+    "signalError",
+    "managedSCAddress",
+    "smallIntGetUnsignedArgument",
+    "getNumArguments",
+    "mBufferSetBytes",
+    "mBufferStorageLoad",
+    "mBufferGetLength",
+    "mBufferGetByteSlice",
+    "mBufferAppendBytes",
+    "managedSignalError",
+    "bigIntGetExternalBalance",
+    "checkNoPayment",
+    "getBlockTimestamp",
+    "mBufferStorageStore",
+    "bigIntFinishUnsigned",
+    "smallIntFinishUnsigned",
+    "getNumESDTTransfers",
+    "managedCaller",
+    "managedTransferValueExecute",
+    "mBufferGetBytes"
+]

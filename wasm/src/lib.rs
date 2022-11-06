@@ -1,0 +1,17 @@
+////////////////////////////////////////////////////
+////////////////// AUTO-GENERATED //////////////////
+////////////////////////////////////////////////////
+
+#![no_std]
+
+elrond_wasm_node::wasm_endpoints! {
+    ping_pong
+    (
+        getCurrentFunds
+        getDeadline
+        ping
+        pong
+    )
+}
+
+elrond_wasm_node::wasm_empty_callback! {}

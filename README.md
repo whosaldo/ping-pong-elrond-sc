@@ -2,8 +2,6 @@
 
 First Smart Contract (that works) made by me.
 
-This SC
-
 Deploy:
 
 ```
@@ -23,6 +21,12 @@ erdpy contract call  --pem walletKey.pem --proxy="https://devnet-gateway.elrond.
 If everything works as planned you should receive your xEgld back! :D
 
 
+
+
+
+
 Ubuntu 22.04
+
 Erdpy 2.0.3
+
 Visual Studio Code
